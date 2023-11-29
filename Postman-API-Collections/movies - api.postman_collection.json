@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "262dee6b-fda1-420b-949b-5e200f8a280c",
+		"name": "movies - api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29804745"
+	},
+	"item": [
+		{
+			"name": "get all movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/movies"
+			},
+			"response": []
+		},
+		{
+			"name": "get a single movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/movies/tt3915174"
+			},
+			"response": []
+		},
+		{
+			"name": "create new review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"reviewBody\": \"buenos dias  foi muito bom \",\r\n    \"imdbId\": \"tt3915174\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/reviews"
+			},
+			"response": []
+		}
+	]
+}
